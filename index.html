@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+  <style>
+    .user-input {
+  text-align: center;
+  color: #1f2933;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 500;
+  width: 300px;
+  padding: 10px;
+}
+.check-guess {
+  width: 170px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+}
+.game-description {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.game-result {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+}
+.top-img1{
+  height: 150px;
+
+}
+.main-bg-cont{
+  margin:20px 20px;
+
+}
+.bg-container {
+  background-color: #246db6;
+ 
+  height: 100%;
+  box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+}
+.side-img{
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (min-width:700px){
+  .top-img1{
+    width: 100%;
+    height: auto;
+  }
+  .bg-container {
+
+  background-color: #246db6;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+}
+.main-bg-cont{
+  margin:20px 20px;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+
+}
+.game-description {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 45px;
+  margin-bottom: 5%;
+  font-weight: 500;
+
+  margin-top: 5%;
+}
+.gues-name{
+  margin-top: 8%;
+  margin-bottom: 2%;
+  font-size: 40px;
+}
+.user-input {
+  text-align: center;
+  color: #1f2933;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 500;
+  width: 380px;
+  margin: 2%;
+  padding: 10px;
+}
+.game-result {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px;
+  margin-bottom: 8%;
+}
+.check-guess {
+  width: 250px;
+  border-radius: 5px;
+  margin: 20px;
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 5%;
+  
+}
+}
+
+@media screen and (min-width:1000px){
+  .user-input {
+  text-align: center;
+  color: #1f2933;
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 500;
+  width: 200px;
+  padding: 10px;
+ margin-bottom: 0px;
+}
+.check-guess {
+  width: 170px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 20px;
+  padding: 10px;
+}
+.game-description {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.game-result {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+ margin-bottom: 15px;
+}
+.top-img1{
+  height: 150px;
+
+
+}
+.main-bg-cont{
+  margin:20px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+.gues-name{
+  font-size: 25px;
+  margin-top: 0px;
+}
+.bg-container {
+  background-color: #246db6;
+ width: 500px;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+}
+.side-img{
+  height: 100px;
+  width: 100px;
+}
+}
+
+@media screen and (min-width:1200px){
+  .user-input {
+  text-align: center;
+  color: #1f2933;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 500;
+  width: 300px;
+  padding: 10px;
+}
+.check-guess {
+  width: 170px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+}
+.game-description {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.game-result {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+}
+.top-img1{
+  height: 150px;
+
+}
+.main-bg-cont{
+  margin:20px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+.bg-container {
+  background-color: #246db6;
+ 
+  height: 100%;
+  box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+}
+.side-img{
+  height: 100px;
+  width: 100px;
+}
+}
+@media screen and (min-width:2000px){
+  .user-input {
+  text-align: center;
+  color: #1f2933;
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 500;
+  width: 200px;
+  padding: 10px;
+}
+.check-guess {
+  width: 170px;
+  border-radius: 5px;
+  margin: 20px;
+  font-size: 16px;
+  padding: 10px;
+}
+.game-description {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.game-result {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+}
+.top-img1{
+  height: 150px;
+
+}
+.main-bg-cont{
+  margin:20px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.bg-container {
+  background-color: #246db6;
+ 
+  height: 100%;
+  box-shadow: 0 4px 8px 0 lightblue, 0 6px 20px 0 lightblue;
+}
+.side-img{
+  height: 100px;
+  width: 100px;
+}
+}
+  </style> 
+  
+  </head>
+  <body>
+    <div class="main-bg-cont">
+    <div class="container-fluid bg-container">
+      <div class="row bg-white">
+        <div class="text-center">  
+          <img class="top-img1" src="https://talentaqdev.blob.core.windows.net/profileimages/2a3e2f37-263a-43ea-b1bd-5bc1de1532c2.png" />
+          <h3 class="text-center game-description">
+            Find out the right number between 1 to 100
+          </h3>
+        </div>
+      </div>
+   
+      <div class="row">
+        <div>
+        <div class="col-12 text-center mt">
+          <h3 class="text-white gues-name">
+            Guess The Number
+            <img class="side-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-number-img.png"
+            />
+          </h3>
+          <input type="text" class="user-input" id="userInput" />
+          <div>
+            <br/>
+            <button class="btn btn-info check-guess text-white" onclick="checkGuess()">
+              <b>Check</b>
+            </button>
+          </div>
+          <p class="game-result" id="gameResult"></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    <script>
+      let gameResult = document.getElementById("gameResult");
+let userInput = document.getElementById("userInput");
+let randomNumber = Math.ceil(Math.random() * 100);
+function checkGuess() {
+  let guessedNumber = parseInt(userInput.value);
+  if (guessedNumber > randomNumber) {
+    gameResult.textContent = "Too High! Try Again.";
+    gameResult.style.backgroundColor = "#1e217c";
+  }
+  else if (guessedNumber < randomNumber) {
+    gameResult.textContent = "Too Low! Try Again.";
+    gameResult.style.backgroundColor = "#1e217c";
+  }
+  else if (guessedNumber === randomNumber) {
+    gameResult.textContent = "Congratulations! You got it right.";
+    gameResult.style.backgroundColor = "green";
+  }
+  else {
+    gameResult.textContent = "Please provide a valid input.";
+    gameResult.style.backgroundColor = "#1e217c";
+  }
+}
+    </script>
+  </body>
+</html>
